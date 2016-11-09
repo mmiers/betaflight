@@ -304,8 +304,8 @@ pwmOutputConfiguration_t *pwmInit(drv_pwm_config_t *init)
                 if (timerIndex >= PWM5 && timerIndex <= PWM8)
                     type = MAP_TO_SERVO_OUTPUT;
 #elif defined(X_RACERSPI)
-                // remap PWM3..6 as servos when used in extended servo mode
-                if (timerIndex >= PWM3 && timerIndex <= PWM6)
+                // remap PWM5..6 as servos when used in extended servo mode
+                if (timerIndex >= PWM5 && timerIndex <= PWM6)
                     type = MAP_TO_SERVO_OUTPUT;
 #endif
 

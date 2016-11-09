@@ -17,8 +17,6 @@ const uint16_t multiPPM[] = {
     PWM12 | (MAP_TO_MOTOR_OUTPUT << 8),
     PWM13 | (MAP_TO_MOTOR_OUTPUT << 8),
     PWM14 | (MAP_TO_MOTOR_OUTPUT << 8),
-    PWM3  | (MAP_TO_MOTOR_OUTPUT << 8),  // Swap to servo if needed
-    PWM4  | (MAP_TO_MOTOR_OUTPUT << 8),  // Swap to servo if needed
     PWM5  | (MAP_TO_MOTOR_OUTPUT << 8),  // Swap to servo if needed
     PWM6  | (MAP_TO_MOTOR_OUTPUT << 8),  // Swap to servo if needed
     0xFFFF
@@ -52,10 +50,8 @@ const uint16_t airPPM[] = {
     PWM12 | (MAP_TO_SERVO_OUTPUT  << 8),
     PWM13 | (MAP_TO_SERVO_OUTPUT  << 8),
     PWM14 | (MAP_TO_SERVO_OUTPUT  << 8),
-    PWM3  | (MAP_TO_SERVO_OUTPUT  << 8),
-    PWM4  | (MAP_TO_SERVO_OUTPUT  << 8),
     PWM5  | (MAP_TO_SERVO_OUTPUT  << 8),
-    PWM6  | (MAP_TO_SERVO_OUTPUT  << 8), // servo #10
+    PWM6  | (MAP_TO_SERVO_OUTPUT  << 8), // servo #8
     0xFFFF
 };
 
